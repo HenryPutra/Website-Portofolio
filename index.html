@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hendri Restu Eko Saputra - Website Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header id="hero">
+
+        <!-- Tambahkan div untuk foto -->
+        <div class="profile-photo">
+            <img src="profile.jpg" alt="Foto Profil">
+        </div>
+
+        <h1>Hendri Restu Eko Saputra</h1>
+
+        <p style="color: #f1faee;">Mahasiswa Teknik Informatika Semester 3</p>
+
+        <a href="#about" class="btn">Tentang Saya</a>
+
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Halo nama saya Hendri Restu Eko Saputra. Saat ini, saya adalah
+            seorang mahasiswa berusia 20 tahun yang belajar di Politeknik
+            Harapan Bersama. Jurusan saya D4 Teknik Informatika dan saat ini
+            saya duduk di semester 3. Saya sungguh mempunyai semangat yang
+            tinggi dalam menimba ilmu, dan bersemangat dalam menciptakan masa
+            depan yang cerah. Saya yakin dengan kerja keras dan dedikasi, saya
+            akan mampu mencapai impian dan tujuan yang saya inginkan.</p>
+
+        <h3>Kemampuan Saya</h3>
+        <ul>
+            <li>Mampu belajar hal yang saya minati dengan baik</li>
+            <li>Tekun dalam belajar dengan bidang yang saya minati</li>
+        </ul>
+
+        <h3>Pengalaman</h3>
+        <p>Pada semester 1 & 2 saya banyak mempelajari hal-hal baru yang belum pernah saya ketahui, seperti bahasa
+            pemrograman yang memiliki banyak jenis dan kegunaanya masing-masing pada semester sebelumnya saya sempat
+            belajar bahasa Java,
+            Python, PHP, dan Javascript. Tidak hanya belajar bahasa pemrograman saya juga sempat belajar membuat UI/UX
+            design di Figma serta membuat design aplikasi
+            dan banyak lain hal.
+        </p>
+
+        <h3>Kesukaan</h3>
+        <p>Saya suka bahasa pemrograman Python karena mudah untuk dimengerti serta banyak digunakan untuk kebutuhan
+            pengembangan banyak software dll.
+        </p>
+
+        <h3>Tujuan</h3>
+        <p>Tujuan saya berkuliah jurusan Teknik Informatika saya ingin mencari passion saya di bidang komputer karena
+            sejak saya menempuh jenjang SMK
+            saya sudah tertarik untuk mendalami bidang ini dan mulai mencarinya di Teknik Informatika.
+        </p>
+
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects">
+        <h2>Proyek</h2>
+
+        <div class="project-item">
+
+            <h3>Design Aplikasi</h3>
+
+            <p>Pada proyek pembuatan design aplikasi saya membuat design tampilan aplikasi money manager
+
+                saya dituntut untuk membuat tampilan login serta dashboard aplikasinya serta memperhatikan user
+                experience</p>
+
+            <!-- Tambahkan iframe Figma -->
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1)" width="800" height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLUM2Q3zQ5a1gZilURenDUq%2FMONET%3Ftype%3Ddesign%26node-id%3D0%3A1%26mode%3Ddesign%26t%3Dw4vaRkZqBujo45aD-0"
+                allowfullscreen></iframe>
+
+        </div>
+
+        <div class="project-item">
+
+            <h3>Lomba Karya Tulis Ilmiah</h3>
+
+            <p>Dalam lomba ini saya beserta teman saya yang beranggotakan 4 orang termasuk saya membuat sebuah karya
+                tulis ilmiah yang diselenggarakan oleh UB</p>
+
+            <p>Karya tulis ilmiah kami dapat dilihat pada link berikut ini:
+                <a href="https://docs.google.com/document/d/13_ALT6QdJc83lMBWIKcio7yb9xA7EIxF/edit">Klik untuk melihat
+                    dokumen</a>
+            </p>
+
+            <p>Karya tulis ilmiah kami berjudul "PERANCANGAN ARTIFICIAL INTELLIGENCE UNTUK PENENTUAN MINAT DAN BAKAT
+                SISWA DENGAN METODE FUZZY LOGIC DAN FORWARD CHAINING BERBASIS ANDROID MOBILE", sayangnya karya kami
+                tidak memperoleh juara tetapi dalam hal ini saya jadi mengerti cara pembuatan karya ilmiah dengan benar
+                karena selama lomba kami menemui dosen untuk melakukan bimbingan terhadap karya kami.</p>
+
+        </div>
+
+        <h1>Kalkulator Sederhana</h1>
+
+        <div>
+            <input type="text" id="bilangan1" placeholder="Bilangan 1">
+            <input type="text" id="bilangan2" placeholder="Bilangan 2">
+
+            <button onclick="tambah()">+</button>
+            <button onclick="kurang()">-</button>
+            <button onclick="kali()">x</button>
+            <button onclick="bagi()">/</button>
+
+            <p>Hasil: <span id="hasil"></span></p>
+        </div>
+
+        <script>
+            function tambah() {
+                let a = parseFloat(document.getElementById("bilangan1").value);
+                let b = parseFloat(document.getElementById("bilangan2").value);
+                document.getElementById("hasil").textContent = a + b;
+            }
+
+            function kurang() {
+                let a = parseFloat(document.getElementById("bilangan1").value);
+                let b = parseFloat(document.getElementById("bilangan2").value);
+                document.getElementById("hasil").textContent = a - b;
+            }
+
+            function kali() {
+                let a = parseFloat(document.getElementById("bilangan1").value);
+                let b = parseFloat(document.getElementById("bilangan2").value);
+                document.getElementById("hasil").textContent = a * b;
+            }
+
+            function bagi() {
+                let a = parseFloat(document.getElementById("bilangan1").value);
+                let b = parseFloat(document.getElementById("bilangan2").value);
+                document.getElementById("hasil").textContent = a / b;
+            }
+        </script>
+
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>
+            Email: henryputra071@gmail.com <br>
+            No.Telp: 085647705452 <br>
+        </p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/henryputra071/" target="blank"> <img src="instagram-icon.png" width="24"
+                    height="24"> </a>
+            <a href="https://github.com/HenryPutra" target="blank"> <img src="github-icon.png" width="24" height="24">
+            </a>
+            <a href="https://www.linkedin.com/in/hendri-restu-eko-saputra-15190a255//" target="blank"> <img
+                    src="linkedin-icon.png" width="24" height="24"> </img></a>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
